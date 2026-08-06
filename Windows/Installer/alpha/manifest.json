@@ -7,8 +7,8 @@
     "minimum_version":  "0.0.0",
     "download_url":  "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Windows/Installer/alpha/0.0.2/PulsarVPN-0.0.2-Installer.exe",
     "release_notes":  "P072: released via publish_release.ps1",
-    "file_size":  35241194,
-    "sha256":  "93343ee4d75382c1548aaf0a60658a2009e9d0943d3e83396efbaa5ccad24b04",
+    "file_size":  35240446,
+    "sha256":  "3809bba32d7126ad73cfd5f83acbe9509b9e1d2d3f4ce735293672fcc85f32bf",
     "force_update":  false,
     "rollout":  100,
     "allowed_devices":  [
