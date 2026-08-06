@@ -1,0 +1,14 @@
+﻿{
+    "product":  "Pulsar VPN",
+    "channel":  "alpha",
+    "version":  "0.0.2",
+    "minimum_version":  "",
+    "release_date":  "",
+    "download_url":  "https://raw.githubusercontent.com/YOUR_GITHUB_LOGIN/pulsar-vpn-releases/main/Windows/Installer/alpha/0.0.2/PulsarVPN-0.0.2-Installer.exe",
+    "file_size":  35235445,
+    "sha256":  "1a0fde277dd41e8efb8c2101a6afbd88004de71504d36ff39927bc0468b61505",
+    "signature":  "",
+    "notes":  [
+
+              ]
+}
