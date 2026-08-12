@@ -5,7 +5,7 @@
   "file_size": 40470903,
   "sha256": "185f58b0a35008868bfcb129add35ce4e6b810f6fe789a04c49b4485b0ec9339",
   "release_notes": "Dual-GCP (US+EU) Smart Routing, Hysteria2, SMART/FULL modes",
-  "force_update": false,
-  "rollout": 10,
+  "force_update": true,
+  "rollout": 100,
   "minimum_version": "0.0.1"
 }
