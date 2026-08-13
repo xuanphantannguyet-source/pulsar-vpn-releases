@@ -1,10 +1,10 @@
 {
   "channel": "alpha",
-  "version": "0.0.5",
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.0.5/PulsarVPN-0.0.5.apk",
-  "file_size": 40487283,
-  "sha256": "ce60cbb4fec30e9004b8c225fc45a3d3b34bbef98354ea65bdbd11b7b3299e91",
-  "release_notes": "Stability fix: long streaming (30+ min) without drops; Emergency mode tunnel fd re-establish on rebuild; BandwidthMonitor+Emergency share safe rebuild path",
+  "version": "0.0.6",
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.0.6/PulsarVPN-0.0.6.apk",
+  "file_size": 40504743,
+  "sha256": "e012ae7fb333f8335606f196d21a6ef4ba4cb5dafd3b896af12046d43922b004",
+  "release_notes": "SMART: unblocked goes direct (games no lag); Fixed DISCONNECT (system VPN really removed); Seamless recovery after sleep/idle; Auto-safety on stale lists (FailureDetector)",
   "force_update": true,
   "rollout": 100,
   "minimum_version": "0.0.1"
