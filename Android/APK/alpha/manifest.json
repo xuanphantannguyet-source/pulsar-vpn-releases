@@ -2,9 +2,9 @@
   "channel": "alpha",
   "version": "0.1.2",
   "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.2/PulsarVPN-0.1.2.apk",
-  "file_size": 43767946,
-  "sha256": "40bd448bed85f49f5be7db22e025a3c52f885a190c4b8e6e410e18134ac898be",
-  "release_notes": "P106: Coordinator integration, DNS hooks, TX/RX stats, stability fixes",
+  "file_size": 43823361,
+  "sha256": "de8d41e0920d1c1085ddc74e058c3a5a7e72a9ff7e144c345d6882e311864ec5",
+  "release_notes": "P105.2: Ed25519 key rotation complete (core:vpn BuildConfig fixed, crypto-chain restored)",
   "force_update": true,
   "rollout": 100,
   "minimum_version": "0.0.1"
