@@ -1,7 +1,8 @@
 {
   "channel": "alpha",
-  "version": "0.2.0",
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.2.0/PulsarVPN-0.2.0.apk",
+  "version": "0.1.3",
+  "versionCode": 13,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.3/PulsarVPN-0.1.3.apk",
   "file_size": 43767950,
   "sha256": "cdb9c39ed814d7c33abdf9bbf59db21f22a2e7e972280e3eb2ea6f89de0763dc",
   "release_notes": "S4 INTEGRATE: Connect-Time Probe + Multi-country + OONI + Public API",
