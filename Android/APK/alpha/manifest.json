@@ -1,6 +1,7 @@
 {
   "channel": "alpha",
   "version": "0.1.3",
+  "versionCode": 13,
   "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.3/PulsarVPN-0.1.3.apk",
   "file_size": 43767946,
   "sha256": "8a56bb8816b76df89ae499cd49bbb927bda90d0e68fa407ad9dbf00a4ae4bdb9",
