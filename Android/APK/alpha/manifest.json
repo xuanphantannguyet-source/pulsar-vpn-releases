@@ -1,10 +1,10 @@
 {
   "channel": "alpha",
-  "version": "0.0.6",
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.0.6/PulsarVPN-0.0.6.apk",
-  "file_size": 40504743,
-  "sha256": "e012ae7fb333f8335606f196d21a6ef4ba4cb5dafd3b896af12046d43922b004",
-  "release_notes": "SMART: unblocked goes direct (games no lag); Fixed DISCONNECT (system VPN really removed); Seamless recovery after sleep/idle; Auto-safety on stale lists (FailureDetector)",
+  "version": "0.0.7",
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.0.7/PulsarVPN-0.0.7.apk",
+  "file_size": 40570350,
+  "sha256": "04632f215f194566861b161f2dde0883e9da3ff4b489050a0159f259e2ebf7dd",
+  "release_notes": "S1 DETECT/CLIENT: Smart Routing Ecosystem — FailureDetector v2, PersonalOptimizer, InvisibilityGates, LocalKnowledgeBase, Roskomnadzor registry loads securely via tunnel",
   "force_update": true,
   "rollout": 100,
   "minimum_version": "0.0.1"
