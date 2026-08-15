@@ -1,10 +1,10 @@
 {
   "channel": "alpha",
-  "version": "0.0.7",
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.0.7/PulsarVPN-0.0.7.apk",
-  "file_size": 40570350,
-  "sha256": "04632f215f194566861b161f2dde0883e9da3ff4b489050a0159f259e2ebf7dd",
-  "release_notes": "S1 DETECT/CLIENT: Smart Routing Ecosystem — FailureDetector v2, PersonalOptimizer, InvisibilityGates, LocalKnowledgeBase, Roskomnadzor registry loads securely via tunnel",
+  "version": "0.0.8",
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.0.8/PulsarVPN-0.0.8.apk",
+  "file_size": 40570206,
+  "sha256": "92adeff0865580a36966aa0e1c23827a0552bb53cc8bc42677c13d155ec0ac68",
+  "release_notes": "P102 REAL ROUTING: стабильность (health-check 5m), расширенный T1-список (категории), FailureDetector retry+control, GamingModeDetector (игры DIRECT), BandwidthMonitor hysteresis 3/5",
   "force_update": true,
   "rollout": 100,
   "minimum_version": "0.0.1"
