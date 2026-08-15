@@ -1,10 +1,10 @@
 {
   "channel": "alpha",
-  "version": "0.1.1",
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.1/PulsarVPN-0.1.1.apk",
-  "file_size": 43751562,
-  "sha256": "723e5d1d8b15fc924e6f8244739a1adb19396d39ac3a982818f74900dd05c864",
-  "release_notes": "S3 complete: Quorum + k-Anonymity + Reputation + Route Candidates + Ed25519 key rotation (security update)",
+  "version": "0.1.2",
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.2/PulsarVPN-0.1.2.apk",
+  "file_size": 43767946,
+  "sha256": "40bd448bed85f49f5be7db22e025a3c52f885a190c4b8e6e410e18134ac898be",
+  "release_notes": "P106: Coordinator integration, DNS hooks, TX/RX stats, stability fixes",
   "force_update": true,
   "rollout": 100,
   "minimum_version": "0.0.1"
