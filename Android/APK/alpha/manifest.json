@@ -3,9 +3,9 @@
   "version": "0.1.3",
   "versionCode": 13,
   "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.3/PulsarVPN-0.1.3.apk",
-  "file_size": 43797829,
-  "sha256": "305420fb9e6e57dabf0f45108a0b04141bf17af899f80b9d19863acab9029741",
-  "release_notes": "P108: screen rotation fix (configChanges + battery permission one-time)",
+  "file_size": 43871840,
+  "sha256": "6007afb46b6473ac2a4dec5c9e321202fc5fa365c3c5f9a85fe68756fb1d24d6",
+  "release_notes": "P110: update notifications + manual check button (v0.1.3 with P109.3)",
   "force_update": true,
   "rollout": 100,
   "minimum_version": "0.0.1"
