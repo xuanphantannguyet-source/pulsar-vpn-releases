@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.8",
-  "versionCode": 18,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.8/PulsarVPN-0.1.8.apk",
-  "file_size": 43800806,
-  "sha256": "957bc9a3739c8c1f4375c3c54e4771ced4fdcf0adfde2b031bb20810c0074858",
-  "release_notes": "P112-DIAG: NVIDIA geo-block T1 inline fix (api.ngc/build/auth/developer.nvidia.com via tunnel in SMART)",
+  "version": "0.1.10",
+  "versionCode": 20,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.10/PulsarVPN-0.1.10.apk",
+  "file_size": 43800810,
+  "sha256": "65d9111f0f8c98268de39c746264863cda76c96d779b451922d0f3ea225326e9",
+  "release_notes": "P114+P115: Autonomous Smart Routing (DynamicRouteBuilder + QualityMonitor) + Instagram CDN TCP optimization",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
