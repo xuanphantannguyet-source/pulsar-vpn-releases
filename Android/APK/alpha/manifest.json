@@ -1,12 +1,12 @@
 {
   "channel": "alpha",
-  "version": "0.1.4",
-  "versionCode": 14,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.4/PulsarVPN-0.1.4.apk",
-  "file_size": 43767990,
-  "sha256": "ff4dd8e8baa4cd541e4e7f9d067c63449ef7bf27d888395e86aeff875637948f",
-  "release_notes": "P110: update notifications + manual check button",
-  "force_update": true,
+  "version": "0.1.5",
+  "versionCode": 15,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.5/PulsarVPN-0.1.5.apk",
+  "file_size": 43784370,
+  "sha256": "37884a5232b7f88bc7360ce42f9cc7b738fcc7c923b23fb335dc34da2c542e23",
+  "release_notes": "Fleet orchestration: multi-coordinator EU+US, gossip sync, dynamic fleet registry, capacity reserve (<=70%), smart user distribution (min load/latency)",
+  "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
 }
