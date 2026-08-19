@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.7",
-  "versionCode": 17,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.7/PulsarVPN-0.1.7.apk",
-  "file_size": 43800758,
-  "sha256": "ce214d0e5c77d59e70950691572ed85a110621b881836b49629f12a2ac5a2247",
-  "release_notes": "P112-EXT: Deep Detection complete (Redirect Chain + Dependency Graph + Instant Route Switch + KB save)",
+  "version": "0.1.8",
+  "versionCode": 18,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.8/PulsarVPN-0.1.8.apk",
+  "file_size": 43800806,
+  "sha256": "957bc9a3739c8c1f4375c3c54e4771ced4fdcf0adfde2b031bb20810c0074858",
+  "release_notes": "P112-DIAG: NVIDIA geo-block T1 inline fix (api.ngc/build/auth/developer.nvidia.com via tunnel in SMART)",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
