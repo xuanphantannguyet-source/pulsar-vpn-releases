@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.11",
-  "versionCode": 21,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.11/PulsarVPN-0.1.11.apk",
-  "file_size": 43991081,
-  "sha256": "ed7ccb08dd76210eea507a4cf6fe3742e8aa77bb5083d8b0f826919cad05f4cb",
-  "release_notes": "AdBlock: 206k domains, sanitized ruleset, streaming parser, VPN DNS ownership fix",
+  "version": "0.1.12",
+  "versionCode": 22,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.12/PulsarVPN-0.1.12.apk",
+  "file_size": 69769624,
+  "sha256": "77870d0cff490f0e4ddf5566030ab13193eee0f21bd196fbabf392ac27c80896",
+  "release_notes": "Android TV support: armeabi-v7a libbox + LEANBACK_LAUNCHER launcher",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
