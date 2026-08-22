@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.13",
-  "versionCode": 23,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.13/PulsarVPN-0.1.13.apk",
-  "file_size": 69816231,
-  "sha256": "e732c0a2e86d050cf3f0b8c8d089ecc87ac6e27b15b9b90f601f9906e62dc5cc",
-  "release_notes": "Android TV: Settings D-pad navigation, Diagnostics focus fix, floating button removed",
+  "version": "0.1.15",
+  "versionCode": 25,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.15/PulsarVPN-0.1.15.apk",
+  "file_size": 69786008,
+  "sha256": "802e04e5ae4ab2574c1847837a48625ddc011446d88f9e8813ee8b6a4ab610c6",
+  "release_notes": "TV-OPT-06 field validation: START_STICKY lifecycle hardening for low-memory Google TV",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
