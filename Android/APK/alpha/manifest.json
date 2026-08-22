@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.12",
-  "versionCode": 22,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.12/PulsarVPN-0.1.12.apk",
-  "file_size": 69769624,
-  "sha256": "77870d0cff490f0e4ddf5566030ab13193eee0f21bd196fbabf392ac27c80896",
-  "release_notes": "Android TV support: armeabi-v7a libbox + LEANBACK_LAUNCHER launcher",
+  "version": "0.1.13",
+  "versionCode": 23,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.13/PulsarVPN-0.1.13.apk",
+  "file_size": 69816231,
+  "sha256": "e732c0a2e86d050cf3f0b8c8d089ecc87ac6e27b15b9b90f601f9906e62dc5cc",
+  "release_notes": "Android TV: Settings D-pad navigation, Diagnostics focus fix, floating button removed",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
