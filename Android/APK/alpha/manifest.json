@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.15",
-  "versionCode": 25,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.15/PulsarVPN-0.1.15.apk",
-  "file_size": 69786008,
-  "sha256": "802e04e5ae4ab2574c1847837a48625ddc011446d88f9e8813ee8b6a4ab610c6",
-  "release_notes": "TV-OPT-06 field validation: START_STICKY lifecycle hardening for low-memory Google TV",
+  "version": "0.1.19",
+  "versionCode": 19,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.19/PulsarVPN-0.1.19.apk",
+  "file_size": 8175347,
+  "sha256": "be6f4e777d39c2c778bc79a426c3500f3df2936f710ed602902073d69a803e43",
+  "release_notes": "0.1.19: правило «Напрямую без VPN» работает и в режиме FULL; коллективная база знаний (FSP v1.0); понятная карточка «Разрешить работу в фоне»; автообновление параметров узла при установке новой версии",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
