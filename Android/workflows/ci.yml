@@ -1,0 +1,147 @@
+name: pulsar-next-ci
+
+# PHASE 0 CLOSURE (canon V33-P0178) + PHASE 3 START (canon V33-P0181): the Anti-Duplication Gate,
+# the architecture gates AND the sans-IO native core tests run in CI. This file lives at the
+# REPOSITORY root because GitHub discovers workflows only under <repo>/.github/workflows; every
+# command runs inside clients/androidNEW, the PULSAR NEXT work zone.
+
+on:
+  push:
+    branches: [main, androidNEW]
+  pull_request:
+    branches: [main, androidNEW]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    working-directory: clients/androidNEW
+
+jobs:
+  tests-and-gates:
+    name: Unit tests, native core and architecture gates
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17 (Temurin)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Set up Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+
+      # The Android unit-test tasks need an SDK. androidNEW builders read it from local.properties
+      # locally; on CI that file is (correctly) absent, so the SDK comes from this action instead.
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Cache Gradle dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: gradle-${{ runner.os }}-${{ hashFiles('clients/androidNEW/**/*.gradle*', 'clients/androidNEW/gradle/wrapper/gradle-wrapper.properties') }}
+          restore-keys: |
+            gradle-${{ runner.os }}-
+
+      - name: Cache Cargo registry and target
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            clients/androidNEW/native/unicore/target
+          key: cargo-${{ runner.os }}-${{ hashFiles('clients/androidNEW/native/unicore/Cargo.toml', 'clients/androidNEW/native/unicore/Cargo.lock') }}
+          restore-keys: |
+            cargo-${{ runner.os }}-
+
+      - name: Make Gradle wrapper executable
+        run: chmod +x gradlew
+
+      # STEP 1 - unit tests (the user-facing gate). Pure-JVM modules whose task is `test` (NOT
+      # testDebugUnitTest) are deliberately NOT selected here yet; see docs/decisions/P0-CI-AUTOMATION-GATE.md.
+      - name: Unit tests
+        run: ./gradlew testDebugUnitTest --console=plain --no-daemon
+
+      # NATIVE CORE (canon V33-P0181, ADR-001): the sans-IO crate has ZERO external dependencies, so
+      # --offline is both possible and deliberate - CI must not depend on a registry fetch.
+      - name: Native core tests (sans-IO)
+        working-directory: clients/androidNEW/native/unicore
+        run: cargo test --offline
+
+      # NATIVE L3 (canon V33-P0181, ADR-009): smoltcp sans-IO datapath. It FETCHES smoltcp, so it is
+      # deliberately not `--offline` (CI has the registry); the zero-dependency base crate stays offline.
+      - name: Native L3 tests (smoltcp sans-IO)
+        working-directory: clients/androidNEW/native/unicore-l3
+        run: cargo test
+
+      # NATIVE IO LAYER (canon V33-P0181, ADR-009): the POSIX driver and the Tokio reactor.
+      - name: Native IO layer tests (POSIX + Tokio)
+        working-directory: clients/androidNEW/native/unicore-io
+        run: cargo test --features tokio-reactor
+
+      # NATIVE ADAPTER CODECS (canon V33-P0181): sans-IO VLESS header + HTTP/1.1 chunked framing.
+      - name: Native adapter codec tests
+        working-directory: clients/androidNEW/native/unicore-adapters
+        run: cargo test
+
+      # NATIVE REALITY AUTH CORE (canon V33-P0181): X25519 -> HKDF-SHA256 -> AES-256-GCM session id.
+      - name: Native REALITY auth-core tests
+        working-directory: clients/androidNEW/native/unicore-reality
+        run: cargo test
+
+      # NATIVE TLS 1.3 KEY SCHEDULE (canon V33-P0181), pinned to RFC 8448 vectors.
+      - name: Native TLS 1.3 key schedule tests
+        working-directory: clients/androidNEW/native/unicore-tls13
+        run: cargo test
+
+      # THE POST-QUANTUM HALF (canon V33-P0181 requires VLESS-REALITY with ML-KEM-768): the hybrid
+      # key-share format and the ML-KEM-768 primitive. Feature-gated, so a plain cargo test skips both.
+      - name: Native TLS 1.3 hybrid ML-KEM tests
+        working-directory: clients/androidNEW/native/unicore-tls13
+        run: cargo test --features mlkem
+
+      # NATIVE HYSTERIA2 CODECS (canon V33-P0181): varints, TCP/UDP frames, fragmentation, Salamander.
+      - name: Native Hysteria2 codec tests
+        working-directory: clients/androidNEW/native/unicore-hysteria2
+        run: cargo test
+
+      # NATIVE HYSTERIA2 TRANSPORT (canon V33-P0181): the QUIC/HTTP-3 client, the Salamander socket under
+      # quinn, and the end-to-end obfuscated handshake. These are behind the "quic" feature, so a plain
+      # cargo test would silently skip them - which is exactly how a green build hides a broken transport.
+      - name: Native Hysteria2 QUIC transport tests
+        working-directory: clients/androidNEW/native/unicore-hysteria2
+        run: cargo test --features quic
+
+      # NATIVE AMNEZIAWG CONFIG (canon V33-P0181): junk plan, S1-S4 padding, H1-H4 header ranges.
+      - name: Native AmneziaWG config tests
+        working-directory: clients/androidNEW/native/unicore-amneziawg
+        run: cargo test
+
+      # THE ANDROID JNI BRIDGE IS THE ARTIFACT THE APP ACTUALLY LOADS. Nothing else here compiles it, so a
+      # missing dependency (which happened when the QUIC feature was added to the bridge) or a broken JNI
+      # signature would only surface during a device build.
+      - name: Native JNI bridge check
+        working-directory: clients/androidNEW/native/unicore-jni
+        run: cargo check
+
+      # The measurement device itself: it links every shipped crate, so it fails loudly when a crate's
+      # public surface drifts.
+      - name: Native transport footprint probe check
+        working-directory: clients/androidNEW/native/unicore-transport
+        run: cargo check --release
+
+      # STEP 2 - the mandatory slice cycle: anti-duplication, code-surface and document-hierarchy gates.
+      - name: Architecture and anti-duplication gates
+        run: python tools/run_all_gates.py
