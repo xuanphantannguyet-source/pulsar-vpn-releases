@@ -4,7 +4,7 @@
   "versionCode": 19,
   "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.19/PulsarVPN-0.1.19.apk",
   "file_size": 8175347,
-  "sha256": "be6f4e777d39c2c778bc79a426c3500f3df2936f710ed602902073d69a803e43",
+  "sha256": "d2bb809d70b0065d92a63edb4a0245910cd60659f65c5c124835fb5fe0f75642",
   "release_notes": "0.1.19: правило «Напрямую без VPN» работает и в режиме FULL; коллективная база знаний (FSP v1.0); понятная карточка «Разрешить работу в фоне»; автообновление параметров узла при установке новой версии",
   "force_update": false,
   "rollout": 100,
