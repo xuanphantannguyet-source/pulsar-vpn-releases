@@ -5,7 +5,7 @@
   "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.24/PulsarVPN-0.1.24-a849f7080f4deb93.apk",
   "file_size": 9112592,
   "sha256": "a849f7080f4deb938dc0d1d33aedeca61b58fbf0935a7ec6d996af9d497657da",
-  "release_notes": "• Включён обход блокировок UDP для протокола Hysteria2 (QUIC) — теперь оба сервера работают на полной скорости.\n• Исправлено автоматическое уведомление о выходе новых версий с возможностью отложить установку.\n• Повышена стабильность соединения.",
+  "release_notes": "• Включён обход блокировок UDP для протокола Hysteria2 (QUIC) — теперь оба сервера работают на полной скорости. • Исправлено автоматическое уведомление о выходе новых версий с возможностью отложить установку. • Повышена стабильность соединения.",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
