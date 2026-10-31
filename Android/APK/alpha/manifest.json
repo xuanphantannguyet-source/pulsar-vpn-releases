@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.23",
-  "versionCode": 23,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.23/PulsarVPN-0.1.23-6ffd289b0f7c48d7.apk",
-  "file_size": 9096204,
-  "sha256": "6ffd289b0f7c48d7c9295c00143a577dd7f0248e1da0ec7f96cd8974a10eac1b",
-  "release_notes": "0.1.23: Окно «Доступна новая версия» с кнопками «Обновить сейчас» и «Отложить» теперь появляется при каждом открытии приложения, а не раз в сутки. Если вы нажали «Отложить», приложение скачивает обновление в фоне, и при следующем открытии сразу предлагает установить готовый файл. Также повышена стабильность соединения.",
+  "version": "0.1.24",
+  "versionCode": 24,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.24/PulsarVPN-0.1.24-a849f7080f4deb93.apk",
+  "file_size": 9112592,
+  "sha256": "a849f7080f4deb938dc0d1d33aedeca61b58fbf0935a7ec6d996af9d497657da",
+  "release_notes": "• Включён обход блокировок UDP для протокола Hysteria2 (QUIC) — теперь оба сервера работают на полной скорости.\n• Исправлено автоматическое уведомление о выходе новых версий с возможностью отложить установку.\n• Повышена стабильность соединения.",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
