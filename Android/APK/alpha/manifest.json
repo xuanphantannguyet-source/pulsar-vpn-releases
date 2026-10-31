@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.19",
-  "versionCode": 19,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.19/PulsarVPN-0.1.19-92bc9ac4801680c5.apk",
+  "version": "0.1.20",
+  "versionCode": 20,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.20/PulsarVPN-0.1.20-fe1cb34588a41663.apk",
   "file_size": 8197015,
-  "sha256": "92bc9ac4801680c557009bad30bb72059063f2aaf109079122afba9bfb87b9c8",
-  "release_notes": "0.1.19: исправлена установка обновления (проверка APK перед установщиком, продолжение после разрешения); правило «Напрямую без VPN» работает в FULL; FULL — чистый туннель без обучения; FSP v1.0 обмен знаниями; человеческий текст карточки фона; автообновление параметров узла",
+  "sha256": "fe1cb34588a41663f2bcb067e0d2028681084edfe3848909e0a03176d28edd2b",
+  "release_notes": "0.1.20: дубликат DNS-вопроса холодного старта больше не получает SERVFAIL, если ответ уже получен (страница FULL+DIRECT больше не остаётся пустой); отказ на вопрос, ответ которого ещё свеж, не учитывается DNS-брейкером; 0.1.19: исправлена установка обновления, правило «Напрямую без VPN» в FULL, чистый FULL без обучения, FSP v1.0",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
