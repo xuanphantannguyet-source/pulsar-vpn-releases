@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.25",
-  "versionCode": 25,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.25/PulsarVPN-0.1.25-a3366646f96f9d8d.apk",
-  "file_size": 9112592,
-  "sha256": "a3366646f96f9d8d83a6e9443c18bdd34c7dca8f8e97cc9c8b962b7accd67907",
-  "release_notes": "• Исправлено разрешение имён при подключении через Hysteria2: DNS-запросы теперь идут по защищённому каналу (DoH), когда основной DNS-канал недоступен. • Сайты и приложения открываются при выбранном сервере Hysteria2 — 2ip.io показывает казахстанский адрес узла (2.135.146.64). • Повышена стабильность соединения.",
+  "version": "0.1.26",
+  "versionCode": 26,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.26/PulsarVPN-0.1.26-de953f50e304bbab.apk",
+  "file_size": 9164132,
+  "sha256": "de953f50e304bbab78ed4a77c1f7af105c4f3e59033100a948e9f7b7235649f0",
+  "release_notes": "• Панель управления владельца и 7-дневный пробный период • Карточка «Статус доступа» с ID устройства и остатком дней • Жёсткая блокировка VPN при окончании пробного периода с экраном ввода ключа подписки • Серверы Pulsar теперь управляются с сервера, их адреса и ключи скрыты из интерфейса • Кнопка «Отправить отчёт о проблеме» с кодом обращения",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
