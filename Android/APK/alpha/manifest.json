@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.20",
-  "versionCode": 20,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.20/PulsarVPN-0.1.20-fe1cb34588a41663.apk",
-  "file_size": 8197015,
-  "sha256": "fe1cb34588a41663f2bcb067e0d2028681084edfe3848909e0a03176d28edd2b",
-  "release_notes": "0.1.20: дубликат DNS-вопроса холодного старта больше не получает SERVFAIL, если ответ уже получен (страница FULL+DIRECT больше не остаётся пустой); отказ на вопрос, ответ которого ещё свеж, не учитывается DNS-брейкером; 0.1.19: исправлена установка обновления, правило «Напрямую без VPN» в FULL, чистый FULL без обучения, FSP v1.0",
+  "version": "0.1.21",
+  "versionCode": 21,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.21/PulsarVPN-0.1.21-7a89bf6a7e098537.apk",
+  "file_size": 9095572,
+  "sha256": "7a89bf6a7e09853730cae2df22f7ae44be61e586040f2a2744df6ac5abef0fb7",
+  "release_notes": "0.1.21: Менеджер серверов переделан в единый пул (вшитый сервер-призрак удалён; пустой список запрещает подключение и предлагает добавить сервер); импортированные VLESS-REALITY и Hysteria2 — полноценные серверы движка с реальным пингом и проверкой доступности; страна определяется автоматически (🇰🇿 Казахстан); встроенный живой QR-сканер камеры и починено чтение QR со скриншотов. Примечание: Hysteria2 недоступен в сети, где UDP/443 заблокирован (транспорт измерен и показан честно).",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
