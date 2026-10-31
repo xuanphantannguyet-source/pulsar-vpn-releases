@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.24",
-  "versionCode": 24,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.24/PulsarVPN-0.1.24-a849f7080f4deb93.apk",
+  "version": "0.1.25",
+  "versionCode": 25,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.25/PulsarVPN-0.1.25-a3366646f96f9d8d.apk",
   "file_size": 9112592,
-  "sha256": "a849f7080f4deb938dc0d1d33aedeca61b58fbf0935a7ec6d996af9d497657da",
-  "release_notes": "• Включён обход блокировок UDP для протокола Hysteria2 (QUIC) — теперь оба сервера работают на полной скорости. • Исправлено автоматическое уведомление о выходе новых версий с возможностью отложить установку. • Повышена стабильность соединения.",
+  "sha256": "a3366646f96f9d8d83a6e9443c18bdd34c7dca8f8e97cc9c8b962b7accd67907",
+  "release_notes": "• Исправлено разрешение имён при подключении через Hysteria2: DNS-запросы теперь идут по защищённому каналу (DoH), когда основной DNS-канал недоступен. • Сайты и приложения открываются при выбранном сервере Hysteria2 — 2ip.io показывает казахстанский адрес узла (2.135.146.64). • Повышена стабильность соединения.",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
