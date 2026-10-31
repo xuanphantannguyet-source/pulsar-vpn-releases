@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.22",
-  "versionCode": 22,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.22/PulsarVPN-0.1.22-73ee54f44637677e.apk",
-  "file_size": 9096212,
-  "sha256": "73ee54f44637677e47d96b89811a8a4db0ee7ebcf9f1f3e94196f3be8c6ad13a",
-  "release_notes": "0.1.22: исправление правдивости статуса сервера — измеренный отказ транспорта (например, Hysteria2/QUIC при заблокированном UDP/443) теперь показывается как «Недоступен» с причиной «Проверка транспорта не прошла», а не как «Не проверялся»; остальное как в 0.1.21 (единый пул серверов, реальные VLESS/Hysteria2, 🇰🇿 Казахстан, встроенный QR-сканер камеры и чтение QR со скриншотов).",
+  "version": "0.1.23",
+  "versionCode": 23,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.23/PulsarVPN-0.1.23-067a9eb7851bcca8.apk",
+  "file_size": 9096208,
+  "sha256": "067a9eb7851bcca8cbda216edef7101608ab8334a3c56ab538f41f39bd12c9a8",
+  "release_notes": "0.1.23: Встроенный сканер QR-кодов камерой — наведите камеру, сервер добавится сам. QR-код теперь читается и с фото/скриншота. Обновлённый менеджер серверов: страны с флагами, честный пинг и понятный статус каждого сервера. «Автовыбор лучшего сервера» не пробует недоступный сервер, если есть рабочий. Приложение работает быстрее и плавнее.",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
