@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.28",
-  "versionCode": 28,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.28/PulsarVPN-0.1.28-dc53fe976a554325.apk",
+  "version": "0.1.29",
+  "versionCode": 29,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.29/PulsarVPN-0.1.29-6f05554d3b3c7d9c.apk",
   "file_size": 9213128,
-  "sha256": "dc53fe976a554325e83c4159e281af6e5cced00ecbab14ec3809175eca96d81f",
-  "release_notes": "v3.8: MODE_SMART (Direct -> Free WG -> Pulsar Node), Shadow Tier-Down Revalidator (Tier 3 -> Tier 1), INV-27 sensors; Веб-Пульт: авто-ключи по HWID, история клиента и покупок, редактирование дней, EXPIRED vs DEVICE_BLOCKED (INV-28)",
+  "sha256": "6f05554d3b3c7d9cafcaea8e177fc19053215fb182697b966cbcee25f5960fcf",
+  "release_notes": "v3.8 финал: MODE_SMART (Direct -> Free WG -> Pulsar Node), Shadow Tier-Down Revalidator (Tier 3 -> Tier 1, доказан на устройстве), INV-27 sensors; Веб-Пульт v1.1.1: авто-ключи по HWID, история клиента и покупок, редактирование дней, EXPIRED vs DEVICE_BLOCKED (INV-28); канонический junk Jc=4, tcp_proxy/flow_seam всегда включены",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
