@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.26",
-  "versionCode": 26,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.26/PulsarVPN-0.1.26-de953f50e304bbab.apk",
-  "file_size": 9164132,
-  "sha256": "de953f50e304bbab78ed4a77c1f7af105c4f3e59033100a948e9f7b7235649f0",
-  "release_notes": "• Панель управления владельца и 7-дневный пробный период • Карточка «Статус доступа» с ID устройства и остатком дней • Жёсткая блокировка VPN при окончании пробного периода с экраном ввода ключа подписки • Серверы Pulsar теперь управляются с сервера, их адреса и ключи скрыты из интерфейса • Кнопка «Отправить отчёт о проблеме» с кодом обращения",
+  "version": "0.1.27",
+  "versionCode": 27,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.27/PulsarVPN-0.1.27-aefcdf65de5570ac.apk",
+  "file_size": 9180360,
+  "sha256": "aefcdf65de5570ac6b214916c2fc76a2cbbd4718fc2871f97477d37328769d78",
+  "release_notes": "• Пульт управления v3.8: ключи жёстко привязаны к HWID и подтягиваются телефоном автоматически, без ручного ввода\n• История клиента и покупок: все ключи, суммы, ID транзакций, изменения дней и блокировки\n• Прямое редактирование дней у клиента без изменения глобального триала\n• Гранулярные баны с причиной и сроком; экран «Доступ ограничен администратором» без покупки и ввода ключа\n• Разделены экраны «Срок истёк» и «Бан администратором»\n• MODE_SMART: телеметрия ступеней каскада (Direct → Pulsar Node) и защита от лагов сети (INV-26/INV-27)",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
