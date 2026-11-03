@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.32",
-  "versionCode": 32,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.32/PulsarVPN-0.1.32-d24ea2c9b5033ae3.apk",
-  "file_size": 9265060,
-  "sha256": "d24ea2c9b5033ae31986d8d1ee4796aceed76ee0a3fca8cb08d747a8fbe00c1d",
-  "release_notes": "v3.9 Final Canon: видимый сервер Cloudflare WARP (Free WG) с ручным выбором; боевая работа всех 3 плеч MODE_SMART (YouTube/Instagram через бесплатный WARP, RU-сайты напрямую, Gemini/ChatGPT/Claude/Telegram через узел KZ); реальные счётчики байтов WARP; двухшаговая фоновая актуализация базы знаний Tier 3 -> 2 -> 1; эшелонированный обход CPS+Greeter без шторма подключений; убраны тестовые костыли tier_force; исправлена медленная установка WARP (без ANR)",
+  "version": "0.1.33",
+  "versionCode": 33,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.33/PulsarVPN-0.1.33-f99be2518f4ac091.apk",
+  "file_size": 9281440,
+  "sha256": "f99be2518f4ac091dd15c9aa5e090edf573d08e05687a5ca64f4168fc07291d2",
+  "release_notes": "v0.1.33: YouTube в SMART (Автовыбор) идёт через бесплатный Cloudflare WARP (RU), а не через KZ — устранены 3 корневые причины (постоянный DNS-кэш между переподключениями, распознавание по SNI до открытия апстрима, запрет перебивания YouTube-медиа на Tier 3); коннектор Tier-2 готов до первого потока (ожидание до 1200 мс); мгновенное переключение серверов с первого нажатия (пин применяется к следующему потоку, старые сокеты сбрасываются); зелёный «Доступен» и реальный пинг у Cloudflare WARP (Free WG); единая база знаний ступеней на диске с механизмом забывания Half-Life/W_eff (порог 0.25); Gemini/Claude в SMART через KZ, 2ip напрямую",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
