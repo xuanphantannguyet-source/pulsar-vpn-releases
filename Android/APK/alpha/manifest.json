@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.30",
-  "versionCode": 30,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.30/PulsarVPN-0.1.30-24a91b276fbc8060.apk",
-  "file_size": 9213124,
-  "sha256": "24a91b276fbc8060ab3249cec527f195a30a005716fdfebe2f2731ccb1b662e6",
-  "release_notes": "Веб-Пульт v1.2: реальный статус «● да (онлайн)» по heartbeat (окно 3 минуты), автообновление таблицы каждые 15 с; чекбоксы и панель массовых действий; кнопка «∞ (VIP)» → VIP/бессрочно и символ ∞ в сроке; отзыв ключей «✕», «Отозвать доступ (0д)»; окно «⚙️ Детали» с 3 вкладками, фильтрами журнала и очисткой истории; чистка БД от тестовых дублей. Android 0.1.30: фоновый пульс онлайна каждые 60 с при включённом VPN/открытом приложении.",
+  "version": "0.1.31",
+  "versionCode": 31,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.31/PulsarVPN-0.1.31-bf04b70b681a341e.apk",
+  "file_size": 9245892,
+  "sha256": "bf04b70b681a341e259b39771f46b52b8d96f244f9a571c4861aed294a9fe987",
+  "release_notes": "v3.8 Tier-2 WARP LIVE: PortalWG CPS I1-I5 + port 1701, per-flow FREE_WG_PORTAL carrier (warp=on), Tier1 Direct + Tier2 WARP + Tier3 Pulsar Node in one session; WarpAutoHealer ports/variants + /v1/device/warp/rotate",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
