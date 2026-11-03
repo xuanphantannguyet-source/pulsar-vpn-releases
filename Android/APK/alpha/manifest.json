@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.31",
-  "versionCode": 31,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.31/PulsarVPN-0.1.31-bf04b70b681a341e.apk",
-  "file_size": 9245892,
-  "sha256": "bf04b70b681a341e259b39771f46b52b8d96f244f9a571c4861aed294a9fe987",
-  "release_notes": "v3.8 Tier-2 WARP LIVE: PortalWG CPS I1-I5 + port 1701, per-flow FREE_WG_PORTAL carrier (warp=on), Tier1 Direct + Tier2 WARP + Tier3 Pulsar Node in one session; WarpAutoHealer ports/variants + /v1/device/warp/rotate",
+  "version": "0.1.32",
+  "versionCode": 32,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.32/PulsarVPN-0.1.32-d24ea2c9b5033ae3.apk",
+  "file_size": 9265060,
+  "sha256": "d24ea2c9b5033ae31986d8d1ee4796aceed76ee0a3fca8cb08d747a8fbe00c1d",
+  "release_notes": "v3.9 Final Canon: видимый сервер Cloudflare WARP (Free WG) с ручным выбором; боевая работа всех 3 плеч MODE_SMART (YouTube/Instagram через бесплатный WARP, RU-сайты напрямую, Gemini/ChatGPT/Claude/Telegram через узел KZ); реальные счётчики байтов WARP; двухшаговая фоновая актуализация базы знаний Tier 3 -> 2 -> 1; эшелонированный обход CPS+Greeter без шторма подключений; убраны тестовые костыли tier_force; исправлена медленная установка WARP (без ANR)",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
