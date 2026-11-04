@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.34",
-  "versionCode": 34,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.34/PulsarVPN-0.1.34-6ea5b315f6a919f0.apk",
-  "file_size": 9330596,
-  "sha256": "6ea5b315f6a919f08a9cbdc4bd07f441509488920b39371fb08abf85802af4e0",
-  "release_notes": "v0.1.34: MODE_SMART теперь полностью динамический и без скриптовых доменных таблиц (git grep = 0 по src/main и native); трёхплечевой каскад Tier 1 Direct -> Tier 2 Cloudflare WARP (Free WG) -> Tier 3 KZ выполняется ВНУТРИ нативного tcp_proxy с Initial Payload Replay (RST 15-30 мс, чёрная дыра ~180-350 мс, WARP->KZ и обратное спасение KZ->WARP 450 мс, L7 micro-rejection <2048 Б/<250 мс), маршрут в Базе Знаний перезаписывается только после реального трафика резервного плеча (устранён флаппинг 2<->3), удалён старый костыль Direct->KZ мимо WARP, живая реактивная актуализация: tier_live_invalidate -> tier_live_revalidated (Confidence=1.0, observedAt=now, host+eTLD+1, Fast-Path <=100 мкс), холодная очистка записей tier_knowledge_clear; приёмка на Xiaomi RGI7WGMNNJG64XAM в MODE_SMART+Автовыбор: Test A первая попытка 3/3 (страницы с контентом), Test B (ложный Tier 3 и ложный Tier 1 -> WARP) PASS, Test V 4/4 (2ip Direct, YouTube WARP, Gemini/ChatGPT HTTP 200), Half-Life забывание PASS; честные открытые пункты: Shadow 3->2 и click-2 Fast-Path для одного seed не измерены, редкие повторные таймауты Chrome 1/3, FGS-краш при очень быстром disconnect->connect (pre-existing)",
+  "version": "0.1.35",
+  "versionCode": 35,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.35/PulsarVPN-0.1.35-707f35b2af9e4e99.apk",
+  "file_size": 9363364,
+  "sha256": "707f35b2af9e4e992a5023b20720c0023d581e7f18fc349c802fb5d73d297c21",
+  "release_notes": "v0.1.35: WARP Tier-2 readiness/liveness — мгновенный eager handshake при старте VPN (бейдж Жёлтый->Зелёный за ~150-600 мс), DNS Startup Hold (первые запросы Chrome удерживаются до валидации туннеля, без DNS_PROBE), Zero-Hang Readiness Gate и быстрый SYN-retry, неразрушающий rebind живой WARP-сессии вместо повторного handshake (без anti-DoS Cloudflare и без -6), Startup Hold больше НИКОГДА не отдаёт deny (ждёт арм/уходит в туннель), per-flow stall не роняет живой UDP-туннель (stalls_suppressed, без ложного увода в KZ), Screen-On/Dead-Peer wakeup с rebind/flush DNS, сериализация lifecycle Disconnect->Connect без FGS-крашей. Приёмка на Xiaomi: Test1 первый клик после Connect — ОБЕ страницы (xvideos + YouTube) отрисованы, WARP carries MB, preserved_session=1, hold_deny=0; wakeup после Doze: DNS восстанавливается, WARP retry — честные открытые пункты в REPORT (повторные попытки в одном прогоне иногда теряют сессию без краша; wakeup result=err на этой прошивке)",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
