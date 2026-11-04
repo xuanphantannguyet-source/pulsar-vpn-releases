@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.35",
-  "versionCode": 35,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.35/PulsarVPN-0.1.35-707f35b2af9e4e99.apk",
-  "file_size": 9363364,
-  "sha256": "707f35b2af9e4e992a5023b20720c0023d581e7f18fc349c802fb5d73d297c21",
-  "release_notes": "v0.1.35: WARP Tier-2 readiness/liveness — мгновенный eager handshake при старте VPN (бейдж Жёлтый->Зелёный за ~150-600 мс), DNS Startup Hold (первые запросы Chrome удерживаются до валидации туннеля, без DNS_PROBE), Zero-Hang Readiness Gate и быстрый SYN-retry, неразрушающий rebind живой WARP-сессии вместо повторного handshake (без anti-DoS Cloudflare и без -6), Startup Hold больше НИКОГДА не отдаёт deny (ждёт арм/уходит в туннель), per-flow stall не роняет живой UDP-туннель (stalls_suppressed, без ложного увода в KZ), Screen-On/Dead-Peer wakeup с rebind/flush DNS, сериализация lifecycle Disconnect->Connect без FGS-крашей. Приёмка на Xiaomi: Test1 первый клик после Connect — ОБЕ страницы (xvideos + YouTube) отрисованы, WARP carries MB, preserved_session=1, hold_deny=0; wakeup после Doze: DNS восстанавливается, WARP retry — честные открытые пункты в REPORT (повторные попытки в одном прогоне иногда теряют сессию без краша; wakeup result=err на этой прошивке)",
+  "version": "0.1.36",
+  "versionCode": 36,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.36/PulsarVPN-0.1.36-cb56a07c9d0737f5.apk",
+  "file_size": 9396136,
+  "sha256": "cb56a07c9d0737f5c2983cac49c348547b840a1ef138c6cf90d9d0bbeabf90d1",
+  "release_notes": "v0.1.36: исправлена корневая причина «YouTube не открывается / WARP не несёт данные» — нативный коннектор free-WG ошибочно выбрасывался до установки терминатора (все egress=2 отклонялись unknown_branch); теперь слот-защёлка ставит коннектор как только терминатор существует, WARP реально диалит и несёт трафик: YouTube открывается с первой попытки на обоих телефонах (warm 5.5–6.1 с рендер, cold 3/3 контент), RuTube/Кинопоиск/VK/Яндекс — Direct, Gemini/ChatGPT/Claude — Tier-3, Mobile Legends — Direct. Также: dyno-трейс жёстко ограничен 2 МиБ и удалены stale updates/*.apk (данные 20→~6.8 МБ, размер приложения ~15.8 МБ ≤22 МБ), мгновенный UI-отклик кнопки (connect_ui_flip_ms=0), принудительный Direct для RU-хостов, endpoint-probe портов WARP, восстановление readiness из нативного состояния, self-heal без вечного warming, счётчики sent/recv/mtu. Честные открытые пункты: повторные заходы YouTube/Instagram дают ошибку недетерминированно (2/3), строка WARP в списке серверов всё ещё UNAVAILABLE при работающих потоках, 2ip-проверка внешнего IP пустая, часть Tier-3 страниц на Huawei медленная",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
