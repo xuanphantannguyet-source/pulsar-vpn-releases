@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.33",
-  "versionCode": 33,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.33/PulsarVPN-0.1.33-f99be2518f4ac091.apk",
-  "file_size": 9281440,
-  "sha256": "f99be2518f4ac091dd15c9aa5e090edf573d08e05687a5ca64f4168fc07291d2",
-  "release_notes": "v0.1.33: YouTube в SMART (Автовыбор) идёт через бесплатный Cloudflare WARP (RU), а не через KZ — устранены 3 корневые причины (постоянный DNS-кэш между переподключениями, распознавание по SNI до открытия апстрима, запрет перебивания YouTube-медиа на Tier 3); коннектор Tier-2 готов до первого потока (ожидание до 1200 мс); мгновенное переключение серверов с первого нажатия (пин применяется к следующему потоку, старые сокеты сбрасываются); зелёный «Доступен» и реальный пинг у Cloudflare WARP (Free WG); единая база знаний ступеней на диске с механизмом забывания Half-Life/W_eff (порог 0.25); Gemini/Claude в SMART через KZ, 2ip напрямую",
+  "version": "0.1.34",
+  "versionCode": 34,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.34/PulsarVPN-0.1.34-6ea5b315f6a919f0.apk",
+  "file_size": 9330596,
+  "sha256": "6ea5b315f6a919f08a9cbdc4bd07f441509488920b39371fb08abf85802af4e0",
+  "release_notes": "v0.1.34: MODE_SMART теперь полностью динамический и без скриптовых доменных таблиц (git grep = 0 по src/main и native); трёхплечевой каскад Tier 1 Direct -> Tier 2 Cloudflare WARP (Free WG) -> Tier 3 KZ выполняется ВНУТРИ нативного tcp_proxy с Initial Payload Replay (RST 15-30 мс, чёрная дыра ~180-350 мс, WARP->KZ и обратное спасение KZ->WARP 450 мс, L7 micro-rejection <2048 Б/<250 мс), маршрут в Базе Знаний перезаписывается только после реального трафика резервного плеча (устранён флаппинг 2<->3), удалён старый костыль Direct->KZ мимо WARP, живая реактивная актуализация: tier_live_invalidate -> tier_live_revalidated (Confidence=1.0, observedAt=now, host+eTLD+1, Fast-Path <=100 мкс), холодная очистка записей tier_knowledge_clear; приёмка на Xiaomi RGI7WGMNNJG64XAM в MODE_SMART+Автовыбор: Test A первая попытка 3/3 (страницы с контентом), Test B (ложный Tier 3 и ложный Tier 1 -> WARP) PASS, Test V 4/4 (2ip Direct, YouTube WARP, Gemini/ChatGPT HTTP 200), Half-Life забывание PASS; честные открытые пункты: Shadow 3->2 и click-2 Fast-Path для одного seed не измерены, редкие повторные таймауты Chrome 1/3, FGS-краш при очень быстром disconnect->connect (pre-existing)",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
