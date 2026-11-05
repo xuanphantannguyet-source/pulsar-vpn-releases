@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.37",
-  "versionCode": 37,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.37/PulsarVPN-0.1.37-f4c8e43d559ba7bb.apk",
+  "version": "0.1.38",
+  "versionCode": 38,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.38/PulsarVPN-0.1.38-0cf9eb1763f25be0.apk",
   "file_size": 9428904,
-  "sha256": "f4c8e43d559ba7bb54c384d77636b10693d65af5a00abbafa17fe1bf7ebb3440",
-  "release_notes": "v0.1.37 (versionCode 37): стабильность WARP. Реюз сессии между переключениями Connect/Disconnect (free_wg_reuse handshake=0), per-key бан -6 и автоматическая ротация ключа через координатор (фикс парсера private_key_b64/peer_public_key_b64 — причина obtained=true|no_credential), key-aware gate пропускает свежий ключ, benign gated wakeup больше не сбрасывает readiness, readiness hold удерживает несущую сеть. Глобальный отказ UDP:443 во всех ступенях (QUIC->TCP, run-provable счётчик), Google search/gstatic Tier-2 по умолчанию+когорта (Huawei первый paint 1.47-1.60 c), WARP-строка из runtime authority, мгновенный UI-отклик кнопки (токен 0-12 мс, flipped_150 4/5 Xiaomi, 5/5 Huawei), RU/2ip принудительно Direct (ip_check=true), игровые потоки по kernel owner lookup все egress=1, размер 9.3-9.4 МБ (dyno 256 КиБ, legacy adblock удалён, кэш очищен). Устройства: Xiaomi YouTube cold 3/3 2.55-3.38 c, cold-cycle ротация 3/3 контент, Huawei Instagram cold 3/3 2.5-4.4 c. Честные открытые пункты: у Xiaomi Google поиск 0/3 (таймауты), тёплые повторы YouTube/Instagram не 3/3, у Huawei ротация через координатор иногда throttled/unavailable, WARP-вкладки на Huawei пустые, IP-значение 2ip ниже первого экрана; WARP-строка пула UNAVAILABLE при доступной server_row. Подробно в docs/decisions/evidence/V37-SMART-LIVE/REPORT.md",
+  "sha256": "0cf9eb1763f25be0e36e79909e06a5ae7b1272d4cf6ced75c29312c4cb80abae",
+  "release_notes": "v0.1.38 (versionCode 38). Публикуется ИЗМЕРЕННО-ЛУЧШАЯ сборка (sha16 0cf9eb1763f25be0): исправлен фейковый пинг WARP (показывается реальный нативный RTT 61–106 мс вместо артефакта 528/1503), устранён ANR на этом билде, холодный Google: Huawei 3/3 за 1.39–1.61 c (Xiaomi 2/3: 0.44/0.48 c + один медленный), холодный xvideos 3/3 на обоих (2.3–4.7 c), WARP-трафик egress=2, размер ~9.4 МБ. ГОРЯЧИЕ ПОВТОРЫ (закрыть Chrome/открыть снова) остаются нестабильными (Xiaomi 2/9, Huawei 5/9), YouTube-лента/скролл с превью не доведены (2 labelled/24 blank на Huawei), строка пула WARP всё ещё показывает UNAVAILABLE (при этом строка сервера показывает реальный RTT), визуальное фото строки серверов не снято. Более поздние экспериментальные перф-сборки (burst-path 1024 слота/128 потоков, fast-path commit) в устройстве дали регресс ANR на повторных заходах и НЕ публикуются; исходники этих экспериментов остаются в репозитории как WIP до отдельного исправления.",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
