@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.47.9",
-  "versionCode": 479,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.47.9/PulsarVPN-0.1.47.9-d0f7f9f50082236b.apk",
-  "file_size": 9494448,
-  "sha256": "d0f7f9f50082236b1f620ff04be0f5635d5c885968cedde37887d38537783abf",
-  "release_notes": "V47-9 (479): (1) P0 flap hardening: am_crash=0 proven on Xiaomi and Huawei 10x300ms (in-process service dispatch, no background startService), tun leak fixed - Xiaomi exactly one tun0 UP after flap (kernel-truth /sys/class/net, native stop!=release, new JNI unicoreTunReleaseAll called before establish, shutdown handle race fixed), DoH pool evict/rebind per session epoch and relay health probe via control DNS query with re-arm and real upstream reopen; honest OPEN layer-2 (relay upstream in dataplane/contour still dies after extreme flap) target 0.1.47.10; (2) canon V3 OPEN invariants closed to IUT: INV-06 PQC_REQUIRED->E4004 (7 tests), INV-14 Safe-Mode fail-closed (6), INV-29 Ed25519 anti-clone real-key tests (12) - matrix OPEN=0, DEFERRED only INV-16 Yandex CDN and INV-25; (3) instrumented SLO timers: instant_disconnect_ms 40ms Xiaomi / 12ms Huawei (norm <=100 PASS); network_rebind/tput/offload honestly UNMEASURED; (4) repo hygiene: V47-8 raw 142.6MB -> 5.6MB with summaries+manifest; tests runtime 1624/0 arch 122/0, cargo 295/0+40/0, check_docs PASS, reconcile CONFORMITY, gates 12/12; APK 9494448 B sha256 d0f7f9f50082236b1f620ff04be0f5635d5c885968cedde37887d38537783abf; both phones left on 479 SMART+AUTO VPN up (Wi-Fi; Huawei LTE underlay outage -> invalid precondition).",
+  "version": "0.1.47.10",
+  "versionCode": 480,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.47.10/PulsarVPN-0.1.47.10-07e5d61baddccc35.apk",
+  "file_size": 9527216,
+  "sha256": "07e5d61baddccc35e72ddfd80bc7b2c412e5b687347cb72443e3c1190d06a20c",
+  "release_notes": "V47-10: flap layer-2 closed (coalescing, post-establish rebuild, non-blocking rebind, unicoreTunReleaseAllExcept, FGS crash=0, native bind root-cause fixed); INV-06/14/29 live-wired; Xiaomi/Huawei fg+bg flap PASS; no plain DNS (INV-15).",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
