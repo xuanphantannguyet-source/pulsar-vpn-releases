@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.47.5",
-  "versionCode": 475,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.47.5/PulsarVPN-0.1.47.5-7b18d7b9c8b0743c.apk",
+  "version": "0.1.47.6",
+  "versionCode": 476,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.47.6/PulsarVPN-0.1.47.6-90fe13fbb7251c99.apk",
   "file_size": 9478064,
-  "sha256": "7b18d7b9c8b0743c84466776a54994a3383a878c81ec1e114a4a9931e59fb00e",
-  "release_notes": "V47-5 (475): universal MODE_SMART, no list dependency - T_warp 250->1500ms (unknown blocked sites stay on Tier-2 WARP, never dumped to KZ), baseline families (x.com AND abs.twimg.com) ride WARP with no split exit; L7 sensor 2048B/250ms->8192B/2000ms (403/451/503 Cloudflare/ISP stubs incl 3195B, TLS Alert, FIN/EOF); Tier-3 written from a measured cascade proof broken_tier=2 (tier_knowledge_replaced tier=3, write_refused=0); Tier-1 Direct learning on delivered traffic (120 lessons); FSPS in the 0-ms seed; Confirm-Optimal Refresh (187 observed_at refreshes, 90 FSPU v2 enqueued) + On-Access Revalidation + shadow downgrade (16, 8 persisted); server fsp.py Half-Life decay sweep; canon v3.9 addendum (V39-P0058/P0061/INV-24/INV-27). Xiaomi acceptance: 16/16 sites rendered, x.com+abs.twimg.com both WARP, tests 3342/0, cargo 285/0+40/0, gates 12/12.",
+  "sha256": "90fe13fbb7251c99140f0de2f78f6153512c8c268d8a11bc756501a2b6efb162",
+  "release_notes": "V47-6 (476): canon Revision V3 synchronized (Section 16, INV-32..INV-37, ADR-032..037, 454 anchors); legacy v3.3-v3.8 two-tier solver removed - single 4-step INV-32 pipeline (user-rules before cohorts, OWN_INFRASTRUCTURE_TUNNEL_PIN, max_tier=1 for 2ip/.ru/game); ABI v5 passes resolvedHost into the native cascade (0% no_host for domain flows); TLS Alert 70/112, T_direct 180..450; tier_store_migration_v476 purged 9 false rows (account.xiaomi.com/xiaomi.com/mi.com/miui.com, tier3=0); Outcome-B loophole closed + Tier-1 delivery protection (ephemeral_rescue); epoch-salt from /v1/fsp/snapshot; Huawei Hysteria2->VLESS fallback instead of -9; server fsp.py deployed (Half-Life 7d/[1d,60d], W<0.25, observed_at_ms, decay_sweep, resource_records 178->0, one rollback backup, testfile_50m preserved). Xiaomi acceptance: 14/14 sites rendered, refresh_refusals=0, xiaomi account Direct/WARP with no KZ, knowledge p50=3us/98.7%<=50us, FSPU accepted=18 dropped=0, cargo 329/0, gates 12/12.",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
