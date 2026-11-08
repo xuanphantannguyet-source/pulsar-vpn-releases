@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.47.7",
-  "versionCode": 477,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.47.7/PulsarVPN-0.1.47.7-3f858d03b20483fe.apk",
+  "version": "0.1.47.8",
+  "versionCode": 478,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.47.8/PulsarVPN-0.1.47.8-a3ff552466283e8f.apk",
   "file_size": 9494448,
-  "sha256": "3f858d03b20483fea736325776a89c91b79b9f70311f63a291d51e1322918f2d",
-  "release_notes": "V47-7 (477): Huawei live LTE root-caused and fixed (stale manual kz-astana-03 egress pin with AUTO intent -> EgressPinReconcilePolicy reconciles AUTO at startup and on every decision); LTE now carries Direct/WARP with DoH 1.1.1.1 answers (201/0 failures) and pages render; D10 Kotlin-canary and D11 releaseStartupHold physically removed (held flows released by the ONE cascade-readiness path); M4/M6 merged into one Step-1 direct-contour predicate with max_tier=1 and an explicit max_tier=1|2|3 field in flow_seam_decision; flow_terminal now carries host as the new last field (native + tolerant Kotlin parser, 0 domain no_host); Tier-2 WARP LTE hardening (1701/500/4500/2408 + 188.114.96.1, MSS/MTU clamp, blackhole naming, rotation reset on underlay change); on-device 477: TUN_READY 41ms Wi-Fi / 74ms LTE, Fast-Path p50 3us/9us, 11-URL 3-arm stress Xiaomi 62 decisions egress 191/42/20 with KZ->WARP leak=0 and decided_direct->tunnel=0, ANR=0, APK 9.49MB; tests 3499/0 Kotlin, 40/0 + 295/0 cargo, gates 12/12.",
+  "sha256": "a3ff552466283e8fa3e4d1c3c1777dd03f1769c3c3ec8a77be4b60596773a438",
+  "release_notes": "V47-8 (478): full stress campaign on Huawei live LTE and Xiaomi Wi-Fi. Found+fixed the rapid-reconnect half-connected defect: dnsObservationStarted was a process-scoped one-shot bit that teardown never reset, so 300ms flapping left the VPN connected with dns_relay absent and zero traffic; fix adds session-scoped DnsRelayArmPolicy (reuse/stale-bit rearm/start), per-session DNS epoch, connect-completion ensureDnsRelayArmedAfterBringup with 3 bounded attempts and session_not_ready repair, plus DnsRelayFlapRearmTest (5). NEW OPEN LAYER-2: after the flap the session is up and relay armed but DoH 8.8.8.8:443 tcp=down so traffic is still absent (evidence postfix-flap-fg.txt) -> target 0.1.47.9. Campaign on 0.1.47.7/478: Huawei LTE 13/15 scenarios pass (2 false-positive FAILs are Chrome sandbox deaths, CRASH_TOTAL=0), 3/3 LTE<->Wi-Fi switches with traffic each leg, airplane auto-recovery 2.6s, interrupt-under-load egress_after=467, YouTube/Telegram/Instagram render, kill-restore 511ms, long session 4/4; 478 multi-arm LTE decisions=65 egress 254 direct + 154 KZ, leak=0, max_tier 1/2/3=18/36/29. Canon V3 compliance matrix: only Yandex Cloud CDN whitelist contour DEFERRED (INV-16) as owner requested; 3 OPEN (INV-06 PQC/E4004, INV-14 crash-loop, INV-29 anti-clone). Tests runtime 1587/0, architecture 122/0, gates 12/12.",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
