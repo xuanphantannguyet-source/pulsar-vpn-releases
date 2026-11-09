@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.47.14",
-  "versionCode": 484,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.47.14/PulsarVPN-0.1.47.14-b66f7e5156a3fbb7.apk",
-  "file_size": 9527212,
-  "sha256": "b66f7e5156a3fbb78c72ffe1a02efabc416c580dd5ca649f0482b88c6b27eb1b",
-  "release_notes": "V47-14 FULL PROJECT ACCEPTANCE: MAX messenger works with VPN on (kernel-level app exclusion, uid proof, no VPN banner; calls/WebRTC bypass the tunnel) + Huawei LTE verified live (TUN_READY 151 ms, DNS p50 199.7 ms with the DoT reserve fix, WARP handshake 161 ms, three arms carrying, MTU 1380/MSS 1340, 3x Wi-Fi<->LTE rebind 400-772 ms); blocks A-I measured on both phones; gates 12/12.",
+  "version": "0.1.47.15",
+  "versionCode": 485,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.47.15/PulsarVPN-0.1.47.15-f01634b9a398a312.apk",
+  "file_size": 9569932,
+  "sha256": "f01634b9a398a312a1d9a88f6b0e910d3c5f35155248f313bf8d67b5a3e061a6",
+  "release_notes": "V47-15 (0.1.47.15/485): INV-38 dynamic anti-VPN auto-bypass with NO package hardcode (MAX/banks/future apps; two-phase inventory, RULE_VERSION 7, durable runtime-promoted cache), universal GAME auto-bypass (CATEGORY_GAME / distinctive engine libs -> kernel DIRECT, zero VPN overhead) - verified on device: ru.oneme.app bypassed, ChatGPT/Claude/WhatsApp/Chrome NOT, com.mobile.legends bypassed; 5-10 s YouTube/Shorts stalls fixed (DialPool media=4/node=17 lanes, WARP wakeup/rebind off the frame worker with T_warp<=2200 ms), serialized TUN establish (no tun1 leak under 10x300 ms flap), reconnect/-9 recovery; on-device canon v4 section 17.3: 8/8 PASS on BOTH owner phones (Xiaomi + Huawei), 0 UNMEASURED; gates 12/12.",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
