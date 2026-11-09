@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.47.12",
-  "versionCode": 482,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.47.12/PulsarVPN-0.1.47.12-ecee7249d9731d2f.apk",
-  "file_size": 9527216,
-  "sha256": "ecee7249d9731d2fdc0334a7b88a5d474c7459102fb4bff51077db27af2dc5da",
-  "release_notes": "V47-10 FINAL: LTE underlay never dials net=none (ordered underlay scan + bounded wait + management relay bound, INV-03); cp_tier_counters canon formula tunnel_offload_ratio=t2/(t2+t3) + total_free_ratio (measured PASS 0.9721 Huawei / 0.99961 Xiaomi); canonical whitelist_lockdown_detected token (INV-16); dump compacted; gates 12/12.",
+  "version": "0.1.47.13",
+  "versionCode": 483,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.47.13/PulsarVPN-0.1.47.13-98617b0afc7032aa.apk",
+  "file_size": 9527212,
+  "sha256": "98617b0afc7032aa3f98ed399c2cc6c0fb0856b22a7d76e44855240b351928af",
+  "release_notes": "V47-13 GLOBAL COMBAT: SAFE-MODE false crash-loop fixed (clean-exit marker -> MODE_SMART decides from the FIRST session: 70-83 flow_seam_decision, t2 bytes MBs, all 3 arms); warm pool no longer killed after establish (Tier 3 warm path); AI cohort is Step-0 (Gemini/ChatGPT/Claude -> KZ 0 ms, t3 bytes > 0), YouTube/Instagram package-aware Tier 2 (0 to KZ), MAX/RU apps Direct by package; permanent gate tools/v483_global_combat_matrix.ps1; gates 12/12.",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
