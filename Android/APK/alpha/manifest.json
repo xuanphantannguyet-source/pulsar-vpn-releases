@@ -1,11 +1,11 @@
 {
   "channel": "alpha",
-  "version": "0.1.47.10",
-  "versionCode": 480,
-  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.47.10/PulsarVPN-0.1.47.10-07e5d61baddccc35.apk",
+  "version": "0.1.47.12",
+  "versionCode": 482,
+  "download_url": "https://raw.githubusercontent.com/xuanphantannguyet-source/pulsar-vpn-releases/main/Android/APK/alpha/0.1.47.12/PulsarVPN-0.1.47.12-ecee7249d9731d2f.apk",
   "file_size": 9527216,
-  "sha256": "07e5d61baddccc35e72ddfd80bc7b2c412e5b687347cb72443e3c1190d06a20c",
-  "release_notes": "V47-10: flap layer-2 closed (coalescing, post-establish rebuild, non-blocking rebind, unicoreTunReleaseAllExcept, FGS crash=0, native bind root-cause fixed); INV-06/14/29 live-wired; Xiaomi/Huawei fg+bg flap PASS; no plain DNS (INV-15).",
+  "sha256": "ecee7249d9731d2fdc0334a7b88a5d474c7459102fb4bff51077db27af2dc5da",
+  "release_notes": "V47-10 FINAL: LTE underlay never dials net=none (ordered underlay scan + bounded wait + management relay bound, INV-03); cp_tier_counters canon formula tunnel_offload_ratio=t2/(t2+t3) + total_free_ratio (measured PASS 0.9721 Huawei / 0.99961 Xiaomi); canonical whitelist_lockdown_detected token (INV-16); dump compacted; gates 12/12.",
   "force_update": false,
   "rollout": 100,
   "minimum_version": "0.0.1"
