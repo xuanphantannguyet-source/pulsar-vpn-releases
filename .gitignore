@@ -1,0 +1,4 @@
+
+# Golden Baseline archive is a filesystem release archive (two independent copies, checksummed);
+# it is intentionally not committed to git because of its size.
+Android/APK/Stable/
